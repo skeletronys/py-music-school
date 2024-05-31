@@ -6,4 +6,12 @@ from musician.models import Musician
 class MusicianSerializer(serializers.ModelSerializer):
     class Meta:
         model = Musician
-        fields = "__all__"
+        fields = (
+            "id",
+            "first_name",
+            "last_name",
+            "instrument",
+            "age",
+            "date_of_applying",
+            "is_adult"
+        )
